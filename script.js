@@ -1,3 +1,5 @@
+// Math.random() retorna a um ponto flutuante entre [0, 1) - ou seja, inclui o zero, mas não inclui o 1.
+// Para sortear até 10, foi utilizada uma multiplicação até 11, dessa forma os números sorteados ficarão de [0,11), ou seja, irão de 0 até 10.
 var max = 10;
 var tentativas = 5;
 var fim = false;
@@ -32,7 +34,9 @@ function Chutar() {
         fim = true;
         resultado.style.color = "white";
         resultado.innerHTML =
-          "🎉PARABÉNS, VOCÊ ACERTOU EM " + (10 - tentativas) + " TENTATIVAS🎉";
+          "🎉PARABÉNS, VOCÊ ACERTOU EM " +
+          (5 - tentativas + 1) +
+          " TENTATIVAS🎉";
       } else {
         tentativas--;
         resultado.innerHTML = "FALTAM " + tentativas + " TENTATIVAS.";
