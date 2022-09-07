@@ -1,0 +1,188 @@
+body {
+ font-family: "Roboto Mono", monospace;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://i.pinimg.com/originals/50/1d/49/501d49dc37935dc5c1fa42a676f785de.gif');
+    background-size: cover;;
+
+}
+
+.git-logo {
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all 0.2s;
+  opacity: 0.8;
+  filter: grayscale(50%);
+}
+
+.container {
+  text-align: center;
+  border-style:dotted;
+  margin: auto;
+  padding: 20px;
+  height: 650px;
+  width: 60vh;
+  border-radius: 5%;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+    -45deg,
+    rgb(27, 71, 92) 0%,
+    rgb(45, 57, 116) 25%,
+    rgb(76, 35, 91) 51%,
+    rgb(110, 22, 54) 100%
+  );
+  animation: AnimateBG 20s ease infinite;
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+
+}
+
+  
+}
+
+.page_subtitle {
+  color: #8d64c6;
+  margin-top: 275px;
+}
+.page-logoa {
+  width: 200px;
+  animation: rgb linear 3s infinite;
+  transition: all 0.2s ease-out;
+}
+.page-logoa:hover {
+  width: 210px;
+}
+
+@keyframes rgb {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.page_logo {
+  width: 200px;
+}
+
+.alura_logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.normal_text {
+  color: #ffffff;
+}
+
+.input_nota {
+  width: 50px;
+  margin: 2px;
+}
+
+.passed {
+  color: green;
+}
+
+.reproved {
+  color: black;
+}
+
+.nota {
+  color: #ffffff;
+}
+
+.btn_submit {
+  background-color: #8d64c6;
+  border-radius: 8px;
+  border-style: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 15px;
+  position: relative;
+  text-align: center;
+  transition: color 100ms;
+  vertical-align: baseline;
+  touch-action: manipulation;
+  margin-top: 10px;
+}
+
+.btn_submit:hover {
+  background-color: #f082ac;
+}
+
+.form_field {
+  font-family: inherit;
+  width: 100px;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.form_field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #f082ac, #f082ac);
+  border-image-slice: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.dica {
+  width: 100%;
+  height: 8%;
+  background-color: #000;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 18px;
+  box-sizing: content-box;
+}
+.dica_atual {
+  width: 0%;
+  height: 100%;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  background-color: purple;
+  overflow: hidden;
+  position: relative;
+}
+
+.resultado {
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  color: black;
+}
+
+.porcentagem {
+  position: relative;
+  top: -5vh;
+  color: #ffffff;
+}
